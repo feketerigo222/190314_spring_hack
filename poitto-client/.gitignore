@@ -1,6 +1,15 @@
 
-# Created by https://www.gitignore.io/api/node,macos
-# Edit at https://www.gitignore.io/?templates=node,macos
+# Created by https://www.gitignore.io/api/sass,macos,firebase,node
+# Edit at https://www.gitignore.io/?templates=sass,macos,firebase,node
+
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
 
 ### macOS ###
 # General
@@ -112,4 +121,10 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-# End of https://www.gitignore.io/api/node,macos
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# End of https://www.gitignore.io/api/sass,macos,firebase,node
