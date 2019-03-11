@@ -38,9 +38,9 @@ export default class Room extends React.Component {
     if (!this.state.team) return null;
     return (
       <div>
-        <RoomHeader className={Style.roomHeader}/>
-        <TopicList team={this.state.team} className={Style.topicList}/>
-        <GroupeManagement currentTopic={this.state.currentTopic} className={Style.groupeManagement}/>
+        <RoomHeader className="roomHeader"/>
+        <TopicList team={this.state.team} className="topicList"/>
+        <GroupeManagement currentTopic={this.state.currentTopic} />
       </div>
     );
   }

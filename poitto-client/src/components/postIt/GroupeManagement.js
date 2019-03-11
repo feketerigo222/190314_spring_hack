@@ -9,7 +9,7 @@ export default class GroupeManagement extends React.Component {
         groups.push(<Groupe group={this.props.currentTopic[group]} name={group}/>)
       }
     return (
-      <div>
+      <div className="groupeManagement">
           {groups}
       </div>
     );
