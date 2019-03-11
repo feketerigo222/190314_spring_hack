@@ -8,7 +8,6 @@ export default class TopicList extends React.Component {
         topicList.push(<Topic topic={this.props.team[topic]} name={topic} changeTopic={this.props.changeTopic}/>);
     }
 
-    console.log(topicList);
     return (
       <div>
         {topicList}

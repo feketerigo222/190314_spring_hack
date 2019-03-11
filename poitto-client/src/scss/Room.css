@@ -5,5 +5,8 @@
   background-color: red; }
 
 .groupeManagement {
-  background-color: red;
-  width: 83%; }
+  background-color: red; }
+
+.main {
+  display: flex;
+  display: inline-flex; }

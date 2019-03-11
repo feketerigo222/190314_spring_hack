@@ -37,7 +37,7 @@ export default class Room extends React.Component {
   render() {
     if (!this.state.team) return null;
     return (
-      <div>
+      <div className="main">
         <RoomHeader className="roomHeader"/>
         <TopicList team={this.state.team} className="topicList"/>
         <GroupeManagement currentTopic={this.state.currentTopic} />

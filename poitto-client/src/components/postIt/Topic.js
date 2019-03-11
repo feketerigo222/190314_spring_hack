@@ -8,7 +8,6 @@ export default class Topic extends React.Component {
       groups.push(group);
     }
 
-    console.log(this.props.topic)
     return (
       <div>
         <div onClick="">> {this.props.name}</div>
