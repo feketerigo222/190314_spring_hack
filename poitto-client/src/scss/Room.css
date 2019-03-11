@@ -7,6 +7,9 @@
 .groupeManagement {
   background-color: red; }
 
-.main {
+.room_main {
   display: flex;
   display: inline-flex; }
+
+body {
+  background-color: black; }

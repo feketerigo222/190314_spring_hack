@@ -3,7 +3,6 @@ import TopicList from './TopicList';
 import RoomHeader from './RoomHeader';
 import { firebaseDB } from '../../firebase';
 import GroupeManagement from './GroupeManagement';
-import Style from '../../scss/Room.css';
 
 
 
@@ -24,7 +23,7 @@ export default class Room extends React.Component {
       let currentTopic;
 
       for (let team in teamList) {
-        if (currentTopic == undefined) currentTopic = teamList[team];
+        if (currentTopic === undefined) currentTopic = teamList[team];
       }
 
       this.setState({
@@ -37,10 +36,10 @@ export default class Room extends React.Component {
   render() {
     if (!this.state.team) return null;
     return (
-      <div className="main">
+      <div className="room_main">
         <RoomHeader className="roomHeader"/>
         <TopicList team={this.state.team} className="topicList"/>
-        <GroupeManagement currentTopic={this.state.currentTopic} />
+        <GroupeManagement currentTopic={this.state.currentTopic} className="groupeManagement"/>
       </div>
     );
   }
