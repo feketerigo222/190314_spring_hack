@@ -1,0 +1,12 @@
+.roomHeader {
+  background-color: red; }
+
+.topicList {
+  background-color: red; }
+
+.groupeManagement {
+  background-color: red; }
+
+.room_main {
+  display: flex;
+  display: inline-flex; }
