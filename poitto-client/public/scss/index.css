@@ -9,7 +9,8 @@
   background-color: red; }
 
 .groupeManagement {
-  background-color: red; }
+  background-color: red;
+  width: 83%; }
 
 .room_main {
   display: flex;
