@@ -9,7 +9,10 @@ export default class TopicList extends React.Component {
     }
 
     return (
-      <div>
+      <div className="topicList">
+        <div className="teamListTop">
+          <div className="teamListRadius"></div>
+        </div>
         {topicList}
       </div>
     );
