@@ -15,7 +15,3 @@
 .room_main {
   display: flex;
   display: inline-flex; }
-
-body {
-  width: 100%;
-  height: 100%; }
