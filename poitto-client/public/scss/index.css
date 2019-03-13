@@ -2,14 +2,7 @@
   display: flex;
   display: inline-flex; }
 
-.roomHeader {
-  background-color: red; }
-
-.topicList {
-  background-color: red; }
-
 .groupeManagement {
-  background-color: red;
   width: 83%; }
 
 .room_main {
