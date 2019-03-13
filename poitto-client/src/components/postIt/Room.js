@@ -40,9 +40,13 @@ export default class Room extends React.Component {
         
         return (
             <div className="room_main">
-                <RoomHeader className="roomHeader"/>
-                <TopicList team={this.state.teamList} className="topicList"/>
-                <GroupeManagement currentTopic={this.state.currentTopic} className="groupeManagement"/>
+                <div className="room_left_container">
+                    <TopicList team={this.state.teamList}/>
+                </div>
+                <div className="room_right_container">
+                    <RoomHeader/>
+                    <GroupeManagement currentTopic={this.state.currentTopic}/>
+                </div>
             </div>
         );
     }
