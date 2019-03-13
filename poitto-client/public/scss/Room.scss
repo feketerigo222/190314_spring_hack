@@ -1,4 +1,9 @@
 .roomHeader {
+    width: calc(100vw - 295px);
+    height: 45px;
+    border-bottom: 1px solid $borderColor;
+    color: $subColorGray;
+    font-weight: 700;
 }
 
 .topicList {
