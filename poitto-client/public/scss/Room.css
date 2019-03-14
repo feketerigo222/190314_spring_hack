@@ -2,11 +2,13 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  font-size: 16px; }
 
 body {
   color: #333333;
-  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
+  font-size: 16px; }
 
 .roomHeader {
   width: calc(100vw - 295px);
@@ -19,10 +21,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .roomHeader .titleContainer {
+  .roomHeader .roomTitleContainer {
     width: 300px;
     border-right: 1px solid #E5E5E5;
     padding: 0 15px; }
+  .roomHeader .roomHeaderMenu {
+    padding: 0 10px; }
+    .roomHeader .roomHeaderMenu .shareButton {
+      color: #ffffff;
+      background-color: #2CB4AD;
+      border: none;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      display: block;
+      padding: 5px 20px; }
 
 .room_main {
   width: calc(100vw - 65px);

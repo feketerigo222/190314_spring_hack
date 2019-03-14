@@ -12,10 +12,24 @@
     justify-content: space-between;
     align-items: center;
 
-    .titleContainer {
+    .roomTitleContainer {
         width: 300px;
         border-right: 1px solid $borderColor;
         padding: 0 15px;
+    }
+
+    .roomHeaderMenu {
+        padding: 0 10px;
+
+        .shareButton {
+            color: $subColorWhite;
+            background-color: $mainColorGreen;
+            border: none;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: block;
+            padding: 5px 20px;
+        }
     }
 }
 

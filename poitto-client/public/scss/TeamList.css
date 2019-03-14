@@ -2,13 +2,42 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  font-size: 16px; }
 
 body {
   color: #333333;
-  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
+  font-size: 16px; }
 
 .teamListContainer {
-  width: 65px;
+  width: 70px;
   height: 100vh;
   background-color: #2CB4AD; }
+  .teamListContainer .teamList {
+    width: 60px;
+    margin: 0 auto;
+    padding: 8px 0;
+    text-align: center; }
+  .teamListContainer .teamListHeader {
+    width: 60px;
+    padding: 15px 0 8px;
+    text-align: center;
+    border-bottom: 1px solid #45C7C1;
+    margin: 0 auto; }
+    .teamListContainer .teamListHeader .teamAddButton {
+      width: 50px;
+      height: 50px;
+      background-color: #FFD855;
+      border: none;
+      border-radius: 50%;
+      color: #ffffff;
+      font-size: 45px;
+      line-height: 50px;
+      margin: 0 auto 8px;
+      display: block;
+      padding-top: 2px; }
+    .teamListContainer .teamListHeader span {
+      color: #FFD855;
+      font-size: 8px;
+      font-weight: 700; }
