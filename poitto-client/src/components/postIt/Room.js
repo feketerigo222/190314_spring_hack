@@ -21,6 +21,7 @@ export default class Room extends React.Component {
         teamRef.on('value', snapshot => {
             const teamList = snapshot.val();
             let currentTopicName;
+            console.log(teamList);
 
             // for (let team in teamList) {
             //     console.log(team)
@@ -32,8 +33,13 @@ export default class Room extends React.Component {
                 teamList,
                 currentTopic
             });
+        });
+
+        teamRef.on('child_added', snapshot => {
+            const teamList = snapshot.val();
+            console.log(teamList)
         })
-    }   
+    }
 
     render() {
         if (!this.state.teamList) return null;
