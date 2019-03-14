@@ -2,45 +2,37 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   color: #333333;
-  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-}
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
 
 .main {
-  display: flex;
-}
+  display: flex; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   color: #333333;
-  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-}
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
 
 .roomHeader {
   width: calc(100vw - 295px);
   height: 45px;
   border-bottom: 1px solid #E5E5E5;
   color: #C7C7C7;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
 .groupeManagement {
-  width: 83%;
-}
+  width: 83%; }
 
 .room_main {
   display: flex;
-  display: inline-flex;
-}
+  display: inline-flex; }
 
 * {
   margin: 0;
@@ -50,8 +42,7 @@ body {
   font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
   font-style: normal;
   font-weight: 600;
-  overflow-y: hidden;
-}
+  overflow-y: hidden; }
 
 .Top {
   position: relative;
@@ -60,8 +51,7 @@ body {
   background-image: url("../images/topphoto.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  z-index: -2;
-}
+  z-index: -2; }
 
 .Top::after {
   position: absolute;
@@ -72,8 +62,7 @@ body {
   height: 100%;
   background: linear-gradient(to bottom, #32B6AF, #FFFFFF);
   opacity: 0.9;
-  z-index: -1;
-}
+  z-index: -1; }
 
 header {
   display: flex;
@@ -82,8 +71,7 @@ header {
   margin-left: 2vw;
   z-index: 1000;
   justify-content: space-between;
-  flex-wrap: nowrap;
-}
+  flex-wrap: nowrap; }
 
 header li {
   display: block;
@@ -92,46 +80,37 @@ header li {
   font-size: 0.8rem;
   line-height: 1.75rem;
   padding: 0.2rem 2rem;
-  border-radius: 1.1rem;
-}
+  border-radius: 1.1rem; }
 
 header .login {
   margin-right: 2vw;
-  border: 1.5px solid white;
-}
+  border: 1.5px solid white; }
 
 header .submit {
   margin-right: 7vw;
-  background-color: #FFD855;
-}
+  background-color: #FFD855; }
 
 main {
   position: relative;
   width: 33.33333vw;
   margin: 0 auto;
   height: 50vh;
-  transform: translateY(50%);
-}
-
-main img {
-  width: 33.33333vw;
-}
+  transform: translateY(50%); }
+  main img {
+    width: 33.33333vw; }
 
 h2, h3 {
   text-align: center;
   white-space: nowrap;
-  color: white;
-}
+  color: white; }
 
 h2 {
   margin-top: 1rem;
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 h3 {
   margin-top: 1.25rem;
-  font-size: 1.25rem;
-}
+  font-size: 1.25rem; }
 
 .startPoitto {
   display: block;
@@ -144,8 +123,7 @@ h3 {
   line-height: 2rem;
   padding: 0.5rem 1rem;
   border-radius: 1.1rem;
-  background-color: #FFD855;
-}
+  background-color: #FFD855; }
 
 footer li {
   width: 9rem;
@@ -157,89 +135,74 @@ footer li {
   left: 2vw;
   color: #FFFFFF;
   font-size: 0.7rem;
-  padding: 0.7rem;
-}
+  padding: 0.7rem; }
 
 footer .contact {
   background-color: #F03E3E;
-  margin-left: 10vw;
-}
+  margin-left: 10vw; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   color: #333333;
-  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-}
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
 
 .teamListContainer {
   width: 65px;
   height: 100vh;
-  background-color: #2CB4AD;
-}
+  background-color: #2CB4AD; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   color: #333333;
-  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-}
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
 
 .topicList {
   width: 230px;
   height: 100vh;
-  background-color: #404040;
-}
+  background-color: #404040; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   color: #333333;
-  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-}
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .groupeManagement {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.048) 1px, transparent 0), linear-gradient(90deg, rgba(0, 0, 0, 0.048) 1px, transparent 0);
-  background-size: 20px 20px;
-}
+  background-size: 20px 20px; }
 
 .postItBoss {
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .postIts {
   display: flex;
   width: 100px;
   height: 100px;
-  margin: 10px;
-}
+  margin: 10px; }
 
 .postIt {
   width: 100px;
   height: 100px;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13);
-}
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13); }
 
 .group {
   position: relative;
@@ -247,8 +210,7 @@ body {
   border: 2px solid #2CB4AD;
   border-radius: 20px;
   text-align: center;
-  color: #2CB4AD;
-}
+  color: #2CB4AD; }
 
 .group span {
   display: block;
@@ -256,27 +218,35 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: -5px;
-}
+  margin-top: -5px; }
 
 .send {
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .currentGroupeList {
   flex-direction: row;
   width: 100vw;
-  height: 80px;
-}
+  height: 100px; }
 
 .send {
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
+.postIts {
+  display: flex;
+  margin: 0; }
 
 .postIt {
   width: 80px;
   height: 80px;
   margin: 0;
-}
+  z-index: 5;
+  position: absolute; }
+
+.overDiv {
+  position: absolute;
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  background-color: black; }
