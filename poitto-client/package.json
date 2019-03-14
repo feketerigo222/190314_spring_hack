@@ -4,12 +4,14 @@
   "private": true,
   "dependencies": {
     "firebase": "^5.8.6",
+    "jquery": "^3.3.1",
     "lodash": "^4.17.11",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8",
-    "simple-drawing-board": "^1.4.1"
+    "simple-drawing-board": "^1.4.1",
+    "sortablejs": "^1.8.4"
   },
   "scripts": {
     "build-css": "node-sass-chokidar public/ -o public/",

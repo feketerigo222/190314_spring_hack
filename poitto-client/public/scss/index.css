@@ -320,6 +320,14 @@ body {
   transform: translateX(-50%);
   margin-top: -5px; }
 
+.otherGroupe {
+  max-width: 740px;
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  color: #2CB4AD;
+  margin: 10px; }
+
 .send {
   display: flex;
   flex-direction: column; }

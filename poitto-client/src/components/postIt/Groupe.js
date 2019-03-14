@@ -1,6 +1,8 @@
 import React from 'react';
 import PostIt from './PostIt';
 import _ from 'lodash';
+import Sortable from 'sortablejs';
+import $ from 'jquery';
 
 export default class GroupeManagement extends React.Component {
   componentWillReceiveProps(nextProps) {
@@ -13,8 +15,18 @@ export default class GroupeManagement extends React.Component {
       return true
   }
 
+  componentDidMount () {
+    const sortableId = this.props.name;
+    let sortable = Sortable.create($(`.${sortableId}`)[0], {
+      group: {
+        name: "groupe"
+      },
+      animation: 100
+  });
+  }
+
   render() {
-    let className = this.props.name == "other" ? "other" : "group";
+    let className = this.props.name == "other" ? "otherGroupe" : "group";
     let name = this.props.name == "other" ? "" : this.props.name;
     let postIts = [];
     let index = 0;
@@ -26,7 +38,7 @@ export default class GroupeManagement extends React.Component {
     return (
       <div className={className}>
         <span>{name}</span>
-        <div className="postItBoss">{postIts}</div>
+        <div className={`postItBoss ${this.props.name}`}>{postIts}</div>
       </div>
     );
   }
