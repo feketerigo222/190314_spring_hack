@@ -11,9 +11,9 @@ export default class TeamList extends React.Component {
           </button>
           <span>NEW TEAM</span>
         </div>
-        <div className="teamList">
+        <ul className="teamList">
           <Team />
-        </div>
+        </ul>
       </div>
     );
   }

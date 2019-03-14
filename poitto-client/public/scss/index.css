@@ -181,6 +181,24 @@ body {
     margin: 0 auto;
     padding: 8px 0;
     text-align: center; }
+    .teamListContainer .teamList .teamIconList {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      position: relative; }
+      .teamListContainer .teamList .teamIconList .teamIconImage {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; }
+      .teamListContainer .teamList .teamIconList::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: block;
+        top: 0; }
   .teamListContainer .teamListHeader {
     width: 60px;
     padding: 15px 0 8px;

@@ -10,6 +10,29 @@
         margin: 0 auto;
         padding: 8px 0;
         text-align: center;
+
+        .teamIconList {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            position: relative;
+
+            .teamIconImage {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            &::after {
+                content: "";
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: block;
+                top: 0;
+            }
+        }
     }
 
     .teamListHeader {
