@@ -7,6 +7,7 @@ export default class Send extends React.Component {
 
     return (
       <div className="Send">
+      <CurrentGroupeList />
         <PostIt />
       </div>
     );

@@ -12,7 +12,6 @@ export default class GroupeManagement extends React.Component {
     return (
         <div className="groupeManagement">
             {groups}
-            {/* <img src={penki} alt=""></img> */}
         </div>
     );
   }

@@ -5,7 +5,7 @@ import { firebaseDB } from '../../firebase';
 export default class PostIt extends React.Component {
     constructor() {
         super();
-        let teamRef = firebaseDB.ref('team1/topic1/GroupeB');
+        let teamRef = firebaseDB.ref('team1/topic1/other');
         this.state = {
             teamRef
         }
