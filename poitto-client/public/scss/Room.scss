@@ -1,18 +1,15 @@
-@import './common.scss';
+@import 'common.scss';
 
 .roomHeader {
-    width: calc(100vw - 295px);
+    width: calc(100vw - 230px);
     height: 45px;
     border-bottom: 1px solid $borderColor;
     color: $subColorGray;
     font-weight: 700;
-}
-
-.groupeManagement {
-    width: 83%;
+    position: fixed;
+    background-color: $subColorWhite;
 }
 
 .room_main {
     display: flex;
-    display: inline-flex;
 }

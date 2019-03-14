@@ -1,29 +1,29 @@
 @import './common.scss';
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .groupeManagement{
     width:100vw;
-    height:100vh;
+    height: calc(100vh - 45px);
     background-image: linear-gradient(rgba(0, 0, 0, 0.048) 1px, transparent 0),
                       linear-gradient(90deg,rgba(0, 0, 0, 0.048) 1px, transparent 0);
     background-size: 20px 20px;
+    margin-top: 45px;
+    padding: 15px;
+    overflow: scroll;
   }
   
 .postItBoss{
+    width: 700px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
   .postIts{
     display: flex;
     width: 100px;
     height: 100px;
-    margin: 10px;
   }
 
   .postIt{
@@ -33,12 +33,14 @@
   }
 
   .group{
+      max-width: 740px;
       position: relative;
       background-color: transparent;
       border: 2px solid $mainColorGreen;
       border-radius: 20px;
       text-align: center;
       color: $mainColorGreen;
+      margin: 10px;
   }
 
   .group span{
