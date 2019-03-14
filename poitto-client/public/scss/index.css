@@ -27,7 +27,14 @@ body {
   color: #C7C7C7;
   font-weight: 700;
   position: fixed;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .roomHeader .titleContainer {
+    width: 300px;
+    border-right: 1px solid #E5E5E5;
+    padding: 0 15px; }
 
 .room_main {
   display: flex; }

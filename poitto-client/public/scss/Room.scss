@@ -8,6 +8,15 @@
     font-weight: 700;
     position: fixed;
     background-color: $subColorWhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .titleContainer {
+        width: 300px;
+        border-right: 1px solid $borderColor;
+        padding: 0 15px;
+    }
 }
 
 .room_main {
