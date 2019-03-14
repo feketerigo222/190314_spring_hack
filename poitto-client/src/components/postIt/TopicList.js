@@ -11,7 +11,10 @@ export default class TopicList extends React.Component {
     return (
       <div className="topicList">
         <div className="teamListTop">
-          <div className="teamListRadius"></div>
+          <img src="../images/icon.png" className="topicTeamIcon"/>
+          <h3>
+            Topic Name
+          </h3>
         </div>
         {topicList}
       </div>

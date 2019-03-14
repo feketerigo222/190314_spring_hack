@@ -10,9 +10,9 @@ export default class GroupeList extends React.Component {
     })
 
     return (
-      <div>
+      <li>
         {groups}
-      </div>
+      </li>
     );
   }
 }
