@@ -1,7 +1,8 @@
 import React from 'react';
-import PostIt from './PostIt';
+import PostIt from './PostIt'
+import CurrentGroupeList from './CurrentGroupeList';
 
-export default class GroupeList extends React.Component {
+export default class Send extends React.Component {
   render() {
 
     return (
