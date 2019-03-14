@@ -14,10 +14,10 @@ export default class PostIt extends React.Component {
 
     render() {
         console.log(this.props.postIt)
-        
+
         return (
-            <div>
-                <canvas id={`canvas_${this.props.name}_${this.props.index}`} width="100" height="100"></canvas>
+            <div className="postIt">
+                <canvas id={`canvas_${this.props.name}_${this.props.index}`} width="80" height="80"></canvas>
             </div>
         );
     }

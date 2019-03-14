@@ -2,7 +2,7 @@ import React from 'react';
 import PostIt from '../postIt/PostIt';
 import { firebaseDB } from '../../firebase';
 
-export default class GroupeList extends React.Component {
+export default class CurrentGroupeList extends React.Component {
     constructor() {
         super();
         this.state ={
@@ -31,14 +31,14 @@ export default class GroupeList extends React.Component {
         let index = 0;
         postIts = postIts.map(postIt => {
             index++;
-            
+
             return (
-                <PostIt postIt={this.state.groupeList[postIt]} index={index}/>
+                <PostIt postIt={this.state.groupeList[postIt]} index={index} name={postIt} />
             );
         })
 
         return (
-            <div>
+            <div className="currentGroupeList">
                 {postIts}
             </div>
         );
