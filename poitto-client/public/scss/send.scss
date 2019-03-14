@@ -1,0 +1,17 @@
+@import './common.scss';
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Send{
+    width:100vw;
+    height:100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.048) 1px, transparent 0),
+                      linear-gradient(90deg,rgba(0, 0, 0, 0.048) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+
+  

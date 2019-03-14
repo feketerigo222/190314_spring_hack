@@ -9,11 +9,12 @@ export default class GroupeManagement extends React.Component {
       postIts.push(<PostIt postIt={this.props.groupe[postIt]} index={index} name={postIt}/>);
       index++;
     }
+    console.log(this.props.name);
 
     return (
-      <div>
-        <div>{this.props.name}</div>
-        <div>{postIts}</div>
+      <div className="group">
+      <span>{this.props.name}</span>
+      <div className="postItBoss">{postIts}</div>      
       </div>
     );
   }
