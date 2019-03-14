@@ -1,7 +1,7 @@
 @import 'common.scss';
 
 .roomHeader {
-    width: calc(100vw - 230px);
+    width: calc(100vw - 295px);
     height: 45px;
     border-bottom: 1px solid $borderColor;
     color: $subColorGray;
@@ -20,5 +20,6 @@
 }
 
 .room_main {
+    width: calc(100vw - 65px);
     display: flex;
 }

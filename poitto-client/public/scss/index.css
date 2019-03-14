@@ -21,7 +21,7 @@ body {
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
 
 .roomHeader {
-  width: calc(100vw - 230px);
+  width: calc(100vw - 295px);
   height: 45px;
   border-bottom: 1px solid #E5E5E5;
   color: #C7C7C7;
@@ -37,6 +37,7 @@ body {
     padding: 0 15px; }
 
 .room_main {
+  width: calc(100vw - 65px);
   display: flex; }
 
 * {
@@ -169,10 +170,13 @@ body {
   color: #333333;
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
 
-.topicList {
+.room_left_container .topicList {
   width: 230px;
   height: 100vh;
   background-color: #404040; }
+
+.room_right_container {
+  width: calc(100vw - 230px); }
 
 * {
   margin: 0;

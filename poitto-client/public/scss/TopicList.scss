@@ -1,7 +1,13 @@
 @import 'common.scss';
 
-.topicList {
-    width: 230px;
-    height: 100vh;
-    background-color: $subColorBlack;
+.room_left_container {
+    .topicList {
+        width: 230px;
+        height: 100vh;
+        background-color: $subColorBlack;
+    }
+}
+
+.room_right_container {
+    width: calc(100vw - 230px);
 }
