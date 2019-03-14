@@ -1,7 +1,65 @@
 @import 'common.scss';
 
 .teamListContainer {
-    width: 65px;
+    width: 70px;
     height: 100vh;
     background-color: $mainColorGreen;
+
+    .teamList {
+        width: 60px;
+        margin: 0 auto;
+        padding: 8px 0;
+        text-align: center;
+
+        .teamIconList {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            position: relative;
+
+            .teamIconImage {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            &::after {
+                content: "";
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: block;
+                top: 0;
+            }
+        }
+    }
+
+    .teamListHeader {
+        width: 60px;
+        padding: 15px 0 8px;
+        text-align: center;
+        border-bottom: 1px solid $teamBorderColor;
+        margin: 0 auto;
+
+        .teamAddButton {
+            width: 50px;
+            height: 50px;
+            background-color: $subColorYellow;
+            border: none;
+            border-radius: 50%;
+            color: $subColorWhite;
+            font-size: 45px;
+            line-height: 50px;
+            margin: 0 auto 8px;
+            display: block;
+            padding-top: 2px;
+        }
+
+        span {
+            color: $subColorYellow;
+            font-size: 8px;
+            font-weight: 700;
+        }
+    }
 }

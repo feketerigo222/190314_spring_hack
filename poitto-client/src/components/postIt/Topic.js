@@ -15,12 +15,14 @@ export default class Topic extends React.Component {
     }
 
     return (
-      <div>
-        <div onClick={this.toggleGroupe.bind(this)}>> {this.props.name}</div>
-        <div className={this.state.className} >
-          <GroupeList groups={groups}/>
-        </div>
-      </div>
+      <dl className="topicListContainer">
+        <dt onClick={this.toggleGroupe.bind(this)}>> {this.props.name}</dt>
+        <dd className={this.state.className} >
+          <ul>
+            <GroupeList groups={groups}/>
+          </ul>
+        </dd>
+      </dl>
     );
   }
 

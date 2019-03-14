@@ -1,7 +1,45 @@
 @import 'common.scss';
 
-.topicList {
+.room_left_container {
     width: 230px;
-    height: 100vh;
-    background-color: $subColorBlack;
+
+    .topicList {
+        width: 230px;
+        height: 100vh;
+        background-color: $subColorBlack;
+        padding: 0 15px;
+
+        .teamListTop {
+            padding: 30px 0 20px;
+            border-bottom: 1px solid $topicBorderColor;
+            margin-bottom: 15px;
+
+            .topicTeamIcon {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .topicListContainer {
+            line-height: 200%;
+            color: $subColorWhite;
+
+            ul {
+                border-left: 1px solid $topicBorderColor;
+                padding: 0 15px;
+                margin-left: 5px;
+                margin-bottom: 10px;
+
+                li {
+                    color: $topicBorderColor;
+                }
+            }
+        }
+    }
+}
+
+.room_right_container {
+    width: calc(100% - 230px);
 }
