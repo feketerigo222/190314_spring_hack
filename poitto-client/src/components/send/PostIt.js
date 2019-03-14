@@ -5,7 +5,7 @@ import { firebaseDB } from '../../firebase';
 export default class PostIt extends React.Component {
     constructor() {
         super();
-        let teamRef = firebaseDB.ref('team1/topic1/other');
+        let teamRef = firebaseDB.ref('team1/topic1/GroupeB');
         this.state = {
             teamRef
         }
@@ -42,7 +42,6 @@ export default class PostIt extends React.Component {
     }
 
     clearCanvas = () => {
-        console.log(this.curImg)
         this.sdb.clear();
     }
 
@@ -52,7 +51,6 @@ export default class PostIt extends React.Component {
     }
 
     colorChange = color => {
-        console.log(color)
         this.sdb.fill(color);
     }
 }
