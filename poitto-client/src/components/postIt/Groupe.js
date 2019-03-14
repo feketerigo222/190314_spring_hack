@@ -26,7 +26,7 @@ export default class GroupeManagement extends React.Component {
   }
 
   render() {
-    let className = this.props.name == "other" ? "other" : "group";
+    let className = this.props.name == "other" ? "otherGroupe" : "group";
     let name = this.props.name == "other" ? "" : this.props.name;
     let postIts = [];
     let index = 0;
