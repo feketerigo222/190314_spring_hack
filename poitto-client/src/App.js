@@ -12,7 +12,7 @@ export default class App extends React.Component {
             <Switch>
               <Route exact path={'/'} component={Top}/>
               <Route exact path={'/postIt'} component={Main}/>
-              <Route exact path={'/postIt/send'} component={Send}/>
+              <Route exact path={'/send'} component={Send}/>
             </Switch>
           </div>
         </BrowserRouter>

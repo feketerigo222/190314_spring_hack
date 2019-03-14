@@ -168,3 +168,17 @@ body {
   width: 230px;
   height: 100vh;
   background-color: #404040; }
+
+.currentGroupeList {
+  flex-direction: row;
+  width: 100vw;
+  height: 80px; }
+
+.send {
+  display: flex;
+  flex-direction: column; }
+
+.postIt {
+  width: 80px;
+  height: 80px;
+  margin: 0; }
