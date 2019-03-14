@@ -13,14 +13,12 @@ export default class PostIt extends React.Component {
     sdb;
     curImg;
     componentDidMount = () => {
-        //console.log(this.curImg);
         const SimpleDrawingBoard = require('simple-drawing-board');
         this.sdb = new SimpleDrawingBoard(document.getElementById('canvas'), {
             lineColor:    '#000',
             lineSize:     3,
         });
         this.sdb.ev.on('save', curImg => {
-            console.log(this.curImg);
             this.curImg = curImg;
         });
     }
@@ -31,7 +29,8 @@ export default class PostIt extends React.Component {
             return (
                 <button onClick={this.colorChange.bind(this, color)}>{color}</button>
             );
-        })
+        });
+
         return (
           <div>
               <canvas id="canvas" width="500" height="500"></canvas>
