@@ -1,4 +1,4 @@
-@import './common.scss';
+@import 'common.scss';
 
 .roomHeader {
     width: calc(100vw - 295px);
@@ -6,13 +6,34 @@
     border-bottom: 1px solid $borderColor;
     color: $subColorGray;
     font-weight: 700;
-}
+    position: fixed;
+    background-color: $subColorWhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.groupeManagement {
-    width: 83%;
+    .roomTitleContainer {
+        width: 300px;
+        border-right: 1px solid $borderColor;
+        padding: 0 15px;
+    }
+
+    .roomHeaderMenu {
+        padding: 0 10px;
+
+        .shareButton {
+            color: $subColorWhite;
+            background-color: $mainColorGreen;
+            border: none;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: block;
+            padding: 5px 20px;
+        }
+    }
 }
 
 .room_main {
+    width: calc(100vw - 65px);
     display: flex;
-    display: inline-flex;
 }

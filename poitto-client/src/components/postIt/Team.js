@@ -3,9 +3,9 @@ import React from 'react';
 export default class Team extends React.Component {
   render() {
     return (
-      <div>
-          team
-      </div>
+      <li className="teamIconList">
+          <img src="../images/icon.png" className="teamIconImage"/>
+      </li>
     );
   }
 }

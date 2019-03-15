@@ -5,7 +5,15 @@ export default class TeamList extends React.Component {
   render() {
     return (
       <div className="teamListContainer">
-        <Team />
+        <div className="teamListHeader">
+          <button className="teamAddButton">
+          ＋
+          </button>
+          <span>NEW TEAM</span>
+        </div>
+        <ul className="teamList">
+          <Team />
+        </ul>
       </div>
     );
   }

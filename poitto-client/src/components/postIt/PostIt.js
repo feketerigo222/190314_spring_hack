@@ -4,7 +4,6 @@ export default class PostIt extends React.Component {
     sdb;
 
     render() {
-        console.log(this.props.postIt)
 
         return (
             <div className="postIts">

@@ -2,13 +2,41 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  font-size: 16px; }
 
 body {
   color: #333333;
-  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif; }
+  font-size: 16px; }
 
-.topicList {
-  width: 230px;
-  height: 100vh;
-  background-color: #404040; }
+.room_left_container {
+  width: 230px; }
+  .room_left_container .topicList {
+    width: 230px;
+    height: 100vh;
+    background-color: #404040;
+    padding: 0 15px; }
+    .room_left_container .topicList .teamListTop {
+      padding: 30px 0 20px;
+      border-bottom: 1px solid #707070;
+      margin-bottom: 15px; }
+      .room_left_container .topicList .teamListTop .topicTeamIcon {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto; }
+    .room_left_container .topicList .topicListContainer {
+      line-height: 200%;
+      color: #ffffff; }
+      .room_left_container .topicList .topicListContainer ul {
+        border-left: 1px solid #707070;
+        padding: 0 15px;
+        margin-left: 5px;
+        margin-bottom: 10px; }
+        .room_left_container .topicList .topicListContainer ul li {
+          color: #707070; }
+
+.room_right_container {
+  width: calc(100% - 230px); }

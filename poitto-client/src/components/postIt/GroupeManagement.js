@@ -1,8 +1,19 @@
 import React from 'react';
 import Groupe from './Groupe';
 import penki from '../../images/penki.png';
+import Sortable from 'sortablejs';
+import $ from 'jquery';
 
 export default class GroupeManagement extends React.Component {
+  componentDidMount () {
+    Sortable.create($('.groupeManagement')[0], {
+      group: {
+        name: "groupe"
+      },
+      animation: 100
+  });
+  }
+
   render() {
         let groups = [];
         for (let groupe in this.props.currentTopic) {
@@ -12,7 +23,6 @@ export default class GroupeManagement extends React.Component {
     return (
         <div className="groupeManagement">
             {groups}
-            {/* <img src={penki} alt=""></img> */}
         </div>
     );
   }
