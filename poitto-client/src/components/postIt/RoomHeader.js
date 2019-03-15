@@ -12,11 +12,20 @@ export default class RoomHeader extends React.Component {
           <img src="../images/icon_write.png" className="topicHeaderIcon"/>
         </div>
         <div className="roomHeaderMenu">
+        <article className="groupIcon">
           <img src="../images/icon_group.png" className="topicHeaderIcon"/>
-          <div onClick={this.props.changeFlg.bind(this)}>
-            <img src="../images/icon_delete.png" className="topicHeaderIcon"/>
-          </div>
-          <button className="shareButton">共有</button>
+          <p className="iconCaption">グループ作成</p>
+        </article>
+        <article className="deleteIcon">
+          <img src="../images/icon_delete.png" onClick={this.props.changeFlg.bind(this)} className="topicHeaderIcon"/>
+          <p className="iconCaption">削除</p>
+        </article>
+        <button className="shareButton">共有</button>
+          <p className="buttonCaption">
+            <h4>共有リンクを取得</h4>
+            <input type="text" value="https://drive.google.com/drive/u/0/fold"/>
+            <span>リンクを知っている全員が編集できます</span>
+          </p>
         </div>
       </div>
     );

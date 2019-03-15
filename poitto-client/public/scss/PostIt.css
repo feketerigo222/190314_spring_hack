@@ -8,6 +8,8 @@
   margin: 0;
   z-index: 5;
   position: absolute; }
+  .postIt:hover {
+    box-shadow: 0 0 10px #ffd622; }
 
 .overDiv {
   position: absolute;
