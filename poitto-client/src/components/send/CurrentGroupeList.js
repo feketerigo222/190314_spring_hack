@@ -1,6 +1,7 @@
 import React from 'react';
 import PostIt from '../postIt/PostIt';
 import { firebaseDB } from '../../firebase';
+import memo from '../../images/memo.png';
 
 export default class CurrentGroupeList extends React.Component {
     constructor() {
@@ -11,7 +12,7 @@ export default class CurrentGroupeList extends React.Component {
     }
 
     componentWillMount() {
-        let teamRef = firebaseDB.ref('team1/topic1/groupe1');
+        let teamRef = firebaseDB.ref('team1/topic1/GroupeA');
         teamRef.on('value', snapshot => {
             const groupeList = snapshot.val();
             this.setState({
@@ -39,6 +40,8 @@ export default class CurrentGroupeList extends React.Component {
 
         return (
             <div className="currentGroupeList">
+                <span className="view">一覧へ</span>
+                <img src={memo} alt="" className="memo"></img>
                 {postIts}
             </div>
         );
