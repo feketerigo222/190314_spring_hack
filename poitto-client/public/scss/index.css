@@ -85,7 +85,7 @@ button {
     .roomHeader .roomHeaderMenu .iconCaption {
       display: none;
       position: absolute;
-      bottom: -40px;
+      top: 38px;
       z-index: 5;
       background-color: #2CB4AD;
       border-radius: 3px;
