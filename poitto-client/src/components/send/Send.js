@@ -2,6 +2,7 @@ import React from 'react';
 import PostIt from './PostIt'
 import CurrentGroupeList from './CurrentGroupeList';
 import yajirushi from './../../images/yajirushi.png';
+
 export default class Send extends React.Component {
   render() {
 
