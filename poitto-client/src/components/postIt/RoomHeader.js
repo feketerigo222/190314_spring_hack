@@ -12,10 +12,14 @@ export default class RoomHeader extends React.Component {
           <img src="../images/icon_write.png" className="topicHeaderIcon"/>
         </div>
         <div className="roomHeaderMenu">
+        <article className="groupIcon">
           <img src="../images/icon_group.png" className="topicHeaderIcon"/>
-          <div onClick={this.props.changeFlg.bind(this)}>
-            <img src="../images/icon_delete.png" className="topicHeaderIcon"/>
-          </div>
+          <p className="iconCaption">グループ作成</p>
+        </article>
+        <article className="deleteIcon">
+          <img src="../images/icon_delete.png" onClick={this.props.changeFlg.bind(this)} className="topicHeaderIcon"/>
+          <p className="iconCaption">削除</p>
+        </article>
           <button className="shareButton">共有</button>
         </div>
       </div>

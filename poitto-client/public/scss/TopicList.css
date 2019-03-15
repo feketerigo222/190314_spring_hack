@@ -4,11 +4,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow: visible; }
 
 body {
   color: #333333;
   font-size: 16px; }
+
+button {
+  border: none;
+  outline: none; }
 
 .room_left_container {
   width: 230px; }

@@ -4,11 +4,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow: visible; }
 
 body {
   color: #333333;
   font-size: 16px; }
+
+button {
+  border: none;
+  outline: none; }
 
 .main {
   display: flex; }
@@ -18,14 +23,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow: visible; }
 
 body {
   color: #333333;
   font-size: 16px; }
 
+button {
+  border: none;
+  outline: none; }
+
 .roomHeader {
-  width: calc(100vw - 295px);
+  width: calc(100vw - 300px);
   height: 45px;
   border-bottom: 1px solid #E5E5E5;
   color: #C7C7C7;
@@ -34,7 +44,8 @@ body {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  overflow: visible; }
   .roomHeader .roomTitleContainer {
     width: 300px;
     border-right: 1px solid #E5E5E5;
@@ -57,7 +68,45 @@ body {
       width: 20px;
       height: 20px;
       margin-bottom: -2px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      cursor: pointer; }
+    .roomHeader .roomHeaderMenu .groupIcon, .roomHeader .roomHeaderMenu .deleteIcon {
+      position: relative; }
+    .roomHeader .roomHeaderMenu .groupIcon .iconCaption {
+      width: 100px;
+      left: -40px; }
+      .roomHeader .roomHeaderMenu .groupIcon .iconCaption::before {
+        margin-left: 40px; }
+    .roomHeader .roomHeaderMenu .deleteIcon .iconCaption {
+      width: 50px;
+      left: -15px; }
+      .roomHeader .roomHeaderMenu .deleteIcon .iconCaption::before {
+        margin-left: 15px; }
+    .roomHeader .roomHeaderMenu .iconCaption {
+      display: none;
+      position: absolute;
+      bottom: -40px;
+      z-index: 5;
+      background-color: #2CB4AD;
+      border-radius: 3px;
+      color: #ffffff;
+      padding: 4px 8px;
+      font-size: 14px;
+      text-align: center; }
+      .roomHeader .roomHeaderMenu .iconCaption::before {
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: -19px;
+        border: solid transparent;
+        border-color: rgba(51, 204, 153, 0);
+        border-bottom-color: #2CB4AD;
+        border-width: 10px;
+        pointer-events: none;
+        content: " "; }
+    .roomHeader .roomHeaderMenu .topicHeaderIcon:hover + .iconCaption {
+      display: block; }
     .roomHeader .roomHeaderMenu .shareButton {
       color: #ffffff;
       background-color: #2CB4AD;
@@ -184,11 +233,16 @@ footer .contact {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow: visible; }
 
 body {
   color: #333333;
   font-size: 16px; }
+
+button {
+  border: none;
+  outline: none; }
 
 .teamListContainer {
   width: 70px;
@@ -245,11 +299,16 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow: visible; }
 
 body {
   color: #333333;
   font-size: 16px; }
+
+button {
+  border: none;
+  outline: none; }
 
 .room_left_container {
   width: 230px; }
@@ -307,11 +366,16 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow: visible; }
 
 body {
   color: #333333;
   font-size: 16px; }
+
+button {
+  border: none;
+  outline: none; }
 
 .groupeManagement {
   width: 100%;
@@ -752,6 +816,8 @@ body {
   margin: 0;
   z-index: 5;
   position: absolute; }
+  .postIt:hover {
+    box-shadow: 0 0 10px #ffd622; }
 
 .overDiv {
   position: absolute;
