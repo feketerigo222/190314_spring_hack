@@ -328,14 +328,16 @@ body {
   border-radius: 20px;
   text-align: center;
   color: #2CB4AD;
-  margin: 10px; }
-  .group span {
+  margin: 10px;
+  overflow: visible; }
+  .group h3 {
     display: block;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: -5px; }
+    margin-top: -13px;
+    margin-bottom: 10px;
+    color: #2CB4AD; }
+    .group h3 .groupTitle {
+      background-color: #ffffff;
+      padding: 0 5px; }
 
 .otherGroupe {
   max-width: 740px;
