@@ -1,7 +1,7 @@
 @import './common.scss';
 
 .groupeManagement{
-    width:100vw;
+    width: 100%;
     height: calc(100vh - 45px);
     background-image: linear-gradient(rgba(0, 0, 0, 0.048) 1px, transparent 0),
                       linear-gradient(90deg,rgba(0, 0, 0, 0.048) 1px, transparent 0);
@@ -9,10 +9,14 @@
     margin-top: 45px;
     padding: 15px;
     overflow: scroll;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
   
 .postItBoss{
-    width: 700px;
+    width: 500px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -33,7 +37,7 @@
   }
 
   .group{
-      max-width: 740px;
+      // max-width: 500px;
       position: relative;
       background-color: transparent;
       border: 2px solid $mainColorGreen;
@@ -41,14 +45,18 @@
       text-align: center;
       color: $mainColorGreen;
       margin: 10px;
+      overflow: visible;
+      padding-left: 20px;
 
-      span{
+      h3 {
         display: block;
-        position: relative;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: -5px;
+        margin-top: -13px;
+        margin-bottom: 10px;
+        color: $mainColorGreen;
+        .groupTitle {
+          background-color: $subColorWhite;
+          padding: 0 5px;
+        }
       }
   }
 
