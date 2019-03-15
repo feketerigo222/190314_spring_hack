@@ -13,7 +13,9 @@ export default class RoomHeader extends React.Component {
         </div>
         <div className="roomHeaderMenu">
           <img src="../images/icon_group.png" className="topicHeaderIcon"/>
-          <img src="../images/icon_delete.png" className="topicHeaderIcon"/>
+          <div onClick={this.props.changeFlg.bind(this)}>
+            <img src="../images/icon_delete.png" className="topicHeaderIcon"/>
+          </div>
           <button className="shareButton">共有</button>
         </div>
       </div>

@@ -31,7 +31,8 @@ export default class GroupeManagement extends React.Component {
     let postIts = [];
     let index = 0;
     for (let postIt in this.props.groupe) {
-      postIts.push(<PostIt postIt={this.props.groupe[postIt]} index={index} name={postIt}/>);
+      let path = `${this.props.path}/${postIt}`;
+      postIts.push(<PostIt postIt={this.props.groupe[postIt]} index={index} name={postIt} delFlg={this.props.delFlg} path={path}/>);
       index++;
     }
 
