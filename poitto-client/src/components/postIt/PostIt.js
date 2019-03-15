@@ -22,7 +22,6 @@ export default class PostIt extends React.Component {
     }
 
     delPostIt = () => {
-        console.log(thi)
         if (!this.props.delFlg) return;
 
         console.log(this.props.path)
