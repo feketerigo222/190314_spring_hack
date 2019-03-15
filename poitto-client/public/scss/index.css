@@ -38,9 +38,26 @@ body {
   .roomHeader .roomTitleContainer {
     width: 300px;
     border-right: 1px solid #E5E5E5;
-    padding: 0 15px; }
+    padding: 0 15px;
+    display: flex; }
+    .roomHeader .roomTitleContainer .topicHeaderIcon {
+      width: 16px;
+      height: 16px;
+      margin-bottom: -2px;
+      display: block; }
+    .roomHeader .roomTitleContainer .topicNameArea {
+      padding: 0 5px;
+      width: 250px; }
   .roomHeader .roomHeaderMenu {
-    padding: 0 10px; }
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .roomHeader .roomHeaderMenu .topicHeaderIcon {
+      width: 20px;
+      height: 20px;
+      margin-bottom: -2px;
+      margin-right: 10px; }
     .roomHeader .roomHeaderMenu .shareButton {
       color: #ffffff;
       background-color: #2CB4AD;
@@ -48,7 +65,8 @@ body {
       border-radius: 50px;
       font-size: 0.9rem;
       display: block;
-      padding: 5px 20px; }
+      padding: 4px 20px;
+      margin: 0 5px; }
 
 .room_main {
   width: calc(100vw - 65px);
@@ -311,14 +329,13 @@ body {
   text-align: center;
   color: #2CB4AD;
   margin: 10px; }
-
-.group span {
-  display: block;
-  position: relative;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: -5px; }
+  .group span {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -5px; }
 
 .otherGroupe {
   max-width: 740px;
