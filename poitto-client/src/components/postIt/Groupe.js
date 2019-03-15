@@ -37,10 +37,12 @@ export default class GroupeManagement extends React.Component {
     }
 
     return (
-      <div className={className}>
-        <span>{name}</span>
-        <div className={`postItBoss ${this.props.name}`}>{postIts}</div>
-      </div>
+      <section className={className}>
+        <h3>
+          <span className="groupTitle">{name}</span>
+        </h3>
+        <article className={`postItBoss ${this.props.name}`}>{postIts}</article>
+      </section>
     );
   }
 
