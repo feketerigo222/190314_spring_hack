@@ -31,6 +31,9 @@
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                &:hover {
+                    cursor: pointer;
+                }
 
                 &::before {
                     content: "";
@@ -47,12 +50,16 @@
 
             ul {
                 border-left: 1px solid $topicBorderColor;
-                padding: 0 15px;
                 margin-left: 5px;
                 margin-bottom: 10px;
 
                 li {
+                    padding: 0 15px;
                     color: $topicBorderColor;
+                    &:hover {
+                        color: $subColorGray;
+                        cursor: pointer;
+                    }
                 }
             }
         }

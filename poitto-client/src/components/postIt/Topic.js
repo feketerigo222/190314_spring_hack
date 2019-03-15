@@ -18,9 +18,7 @@ export default class Topic extends React.Component {
       <dl className="topicListContainer">
         <dt onClick={this.toggleGroupe.bind(this)}>{this.props.name}</dt>
         <dd className={this.state.className} >
-          <ul>
             <GroupeList groups={groups}/>
-          </ul>
         </dd>
       </dl>
     );
