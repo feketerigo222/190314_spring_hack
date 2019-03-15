@@ -19,7 +19,7 @@ export default class GroupeManagement extends React.Component {
     const sortableId = this.props.name;
     let sortable = Sortable.create($(`.${sortableId}`)[0], {
       group: {
-        name: "groupe"
+        name: "postIt"
       },
       animation: 100
   });
