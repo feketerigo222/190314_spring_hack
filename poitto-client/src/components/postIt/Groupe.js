@@ -17,13 +17,13 @@ export default class GroupeManagement extends React.Component {
 
   componentDidMount () {
     const sortableId = this.props.name;
-    let sortable = Sortable.create($(`.${sortableId}`)[0], {
+    Sortable.create($(`.${sortableId}`)[0], {
       group: {
-        name: "groupe"
+        name: "postIt"
       },
       animation: 100
   });
-  }
+}
 
   render() {
     let className = this.props.name == "other" ? "otherGroupe" : "group";
