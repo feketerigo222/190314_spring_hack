@@ -1,7 +1,7 @@
 import React from 'react';
 import { firebaseDB } from '../../firebase';
 import penki from '../../images/penki.png';
-// import upload from '.././../images/upload.png';
+import del from '../../images/icon_119860_256.png';
 
 export default class PostIt extends React.Component {
     constructor() {
@@ -39,11 +39,10 @@ export default class PostIt extends React.Component {
               <div className="changeColor">
               <img src={penki} alt=""></img>
               {colorChange}
-              <button onClick={this.clearCanvas}>
-              {/* <img src={upload} alt="" className="upload"></img> */}
-              </button>
-              <button onClick={this.setImg}>send</button>
               </div>
+              <button onClick={this.clearCanvas} className="delete">
+              <img src={del} alt=""></img>
+              </button>
           </div>
         );
     }
