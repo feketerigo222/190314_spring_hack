@@ -116,6 +116,61 @@ button {
       display: block;
       padding: 4px 20px;
       margin: 0 5px; }
+      .roomHeader .roomHeaderMenu .shareButton:hover + .buttonCaption {
+        display: block; }
+    .roomHeader .roomHeaderMenu .buttonCaption {
+      display: none;
+      width: 270px;
+      font-size: 14px;
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      background-color: #ffffff;
+      border: 1px solid #E5E5E5;
+      border-radius: 3px;
+      padding: 10px 15px;
+      z-index: 100; }
+      .roomHeader .roomHeaderMenu .buttonCaption::before {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -20px;
+        right: 28px;
+        border: solid transparent;
+        border-color: rgba(51, 204, 153, 0);
+        border-bottom-color: #E5E5E5;
+        border-width: 10px;
+        pointer-events: none;
+        content: " "; }
+      .roomHeader .roomHeaderMenu .buttonCaption::after {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -19px;
+        right: 28px;
+        border: solid transparent;
+        border-color: rgba(51, 204, 153, 0);
+        border-bottom-color: #ffffff;
+        border-width: 10px;
+        pointer-events: none;
+        content: " "; }
+      .roomHeader .roomHeaderMenu .buttonCaption h4 {
+        font-size: 14px;
+        color: #404040;
+        display: block;
+        padding: 4px 0 8px; }
+      .roomHeader .roomHeaderMenu .buttonCaption span {
+        font-size: 13px; }
+      .roomHeader .roomHeaderMenu .buttonCaption input {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 300;
+        color: #C7C7C7;
+        border-radius: 50px;
+        border: 1px solid #E5E5E5;
+        padding: 4px 10px;
+        display: block;
+        margin-bottom: 10px; }
 
 .room_main {
   width: calc(100vw - 65px);
