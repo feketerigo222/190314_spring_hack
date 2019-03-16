@@ -36,6 +36,7 @@ export default class GroupeManagement extends React.Component {
       index++;
     }
 
+
     return (
       <section className={className}>
         <h3>

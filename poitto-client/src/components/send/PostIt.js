@@ -2,6 +2,7 @@ import React from 'react';
 import { firebaseDB } from '../../firebase';
 import penki from '../../images/penki.png';
 import del from '../../images/icon_119860_256.png';
+import $ from 'jquery';
 
 export default class PostIt extends React.Component {
     constructor() {
@@ -33,6 +34,7 @@ export default class PostIt extends React.Component {
                 <button onClick={this.colorChange.bind(this, color)}></button>
             );
         });
+
 
         return (
           <div className="pictIt">

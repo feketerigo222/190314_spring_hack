@@ -6,25 +6,10 @@ import $ from 'jquery';
 
 export default class Send extends React.Component {
   render() {
-    let flg = true;
-    let scroll;
-    $(window).scroll(() => {
-      scroll = $(this).scrollTop();
-      alert(scroll)
-      if(flg){
-        flg = false;
-        setTimeout(scroll => {
-          // ここに処理を書く
-          //alert(scroll)
-          flg = true;
-          return flg;
-        }, 2000);
-      }
-    });
-
+   
     return (
       <>
-      <div className="Send">
+      <div className="Send" id='main'>
         <CurrentGroupeList />
         <PostIt />
       </div>
