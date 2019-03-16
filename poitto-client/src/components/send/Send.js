@@ -2,11 +2,12 @@ import React from 'react';
 import PostIt from './PostIt'
 import CurrentGroupeList from './CurrentGroupeList';
 import yajirushi from './../../images/yajirushi.png';
-import $ from 'jquery';
 
 export default class Send extends React.Component {
   render() {
-   
+   window.onload = function(){
+     window.scrollTo(0,0);
+   }
     return (
       <>
       <div className="Send" id='main'>

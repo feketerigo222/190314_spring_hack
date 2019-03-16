@@ -48,7 +48,7 @@
 .changeColor {
   display: inline-block;
   position: absolute;
-  bottom: 16vh;
+  bottom: 2vh;
   left: 7vw; }
   .changeColor button:nth-child(2) {
     background-color: transparent;
@@ -148,8 +148,9 @@
     margin: 0 3px; }
 
 .delete {
+  display: none;
   position: absolute;
-  bottom: 8vh;
+  bottom: 12vh;
   left: 50vw;
   transform: translateX(-50%);
   background-color: transparent;
