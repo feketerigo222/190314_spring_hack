@@ -14,110 +14,107 @@ $MAXWIDTH: 100vw;
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("../images/topphoto.png");
-    background-size: 100% 100%;
+    background: url("../images/topphoto.png") center;
+    background-size: cover;
     background-repeat: no-repeat;
+    padding: 15px;
     z-index: -2;
-}
-
-.Top::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #32B6AF, #FFFFFF);
-    opacity: 0.9;
-    z-index: -1;
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #32B6AF, #FFFFFF);
+        opacity: 0.9;
+        z-index: -1;
+    }
 }
 
 header {
     display: flex;
-    // position: absolute;
-    width: 100vw;
-    margin-top: 2vh;
-    margin-left: 2vw;
+    width: 100%;
     z-index: 1000;
     justify-content: space-between;
     flex-wrap: nowrap;
-}
+    li {
+        display: block;
+        display: inline-block;
+        color: #FFFFFF;
+        font-size: 0.8rem;
+        line-height: 1.75rem;
+        padding: 0.2rem 2rem;
+        border-radius: 50px;
+        margin: 0 5px;
 
-header li {
-    display: block;
-    display: inline-block;
-    color: #FFFFFF;
-    font-size: 0.8rem;
-    line-height: 1.75rem;
-    padding: 0.2rem 2rem;
-    border-radius: 1.1rem;
-}
-
-header .login {
-    margin-right: 2vw;
-    border: 1.5px solid white;
-}
-
-header .submit {
-    margin-right: 7vw;
-    background-color: #FFD855;
+        &.login {
+            border: 1.5px solid white;
+        }
+        &.submit {
+            background-color: #FFD855;
+        }
+    }
 }
 
 main{
     position: relative;
-    width: ($MAXWIDTH / 3);
     margin: 0 auto;
     height: 50vh;
     transform: translateY(50%);
-    img{
+    .logoImage {
         width: $MAXWIDTH/3;
+        display: block;
+        margin: 0 auto;
+    }
+    h2, h3{
+        text-align: center;
+        white-space: nowrap;
+        color: white;
+    }
+    h2{
+        font-size: 2rem;
+        margin: 1rem 0;
+        font-weight: 700;
+    }
+    h3{
+        font-size: 1.25rem;
     }
 }
 
-h2, h3{
-    text-align: center;
-    white-space: nowrap;
-    color: white;
-}
-
-h2{
-    margin-top: 1rem;
-    font-size: 2rem;
-}
-
-h3{
-    margin-top: 1.25rem;
-    font-size: 1.25rem;
-}
 
 .startPoitto{
     display: block;
     margin: 0 auto;
-    width: 50%;
+    width: 250px;
     margin-top: 2rem;
     text-align: center;
     color: #FFFFFF;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     padding: 0.5rem 1rem;
-    border-radius: 1.1rem;
+    border-radius: 50px;
     background-color: #FFD855;
+    letter-spacing: 0.01rem;
 }
 
-footer li{
+footer{
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+
+    li{
     width: 9rem;
     text-align: center;
     background-color: #2CB4AD;
     display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 2vw;
     color: #FFFFFF;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding:0.7rem;
-}
-
-footer .contact{
-    background-color: #F03E3E;
-    margin-left: 10vw;
+    margin: 0 5px;
+    border-radius: 3px 3px 0 0;
+        &.contact{
+            background-color: #F03E3E;
+        }
+    }
 }

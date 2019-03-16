@@ -6,17 +6,17 @@ export default class Top extends Component {
     return (
       <div className="Top">
         <header>
-          <img src={logo} alt=""></img>
+          <img src={logo} alt=""/>
           <ul>
             <li className="login">ログイン</li>
             <li className="submit">会員登録</li>
           </ul>
         </header>
         <main>
-          <img src={logo} alt=""></img>
+          <img src={logo} className="logoImage" alt=""/>
           <h2>アイデアを、ポイっとストック</h2>
           <h3>Poittoで、今すぐアイデアを保存しよう</h3>
-          <div className="startPoitto">Poittoを始める</div>
+          <p className="startPoitto">Poittoを始める</p>
         </main>
         <footer>
           <ul>
