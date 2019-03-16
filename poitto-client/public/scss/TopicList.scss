@@ -26,14 +26,40 @@
             line-height: 200%;
             color: $subColorWhite;
 
+            dt {
+                display: flex;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &::before {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    border: 2px solid;
+                    border-color: #FAFAFA #FAFAFA transparent transparent;
+                    transform: rotate(45deg);
+                    display: block;
+                    margin-top: 10px;
+                    margin-right: 12px;
+                }
+            }
+
             ul {
                 border-left: 1px solid $topicBorderColor;
-                padding: 0 15px;
                 margin-left: 5px;
                 margin-bottom: 10px;
 
                 li {
+                    padding: 0 15px;
                     color: $topicBorderColor;
+                    &:hover {
+                        color: $subColorGray;
+                        cursor: pointer;
+                    }
                 }
             }
         }

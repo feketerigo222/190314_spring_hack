@@ -18,8 +18,8 @@ export default class PostIt extends React.Component {
     componentDidMount = () => {
         const SimpleDrawingBoard = require('simple-drawing-board');
         this.sdb = new SimpleDrawingBoard(document.getElementById('canvas'), {
-            lineColor:    '#000',
-            lineSize:     1,
+            lineColor: '#000',
+            lineSize: 1,
         });
         this.sdb.fill("#FFA5D2");
         this.sdb.ev.on('save', curImg => {

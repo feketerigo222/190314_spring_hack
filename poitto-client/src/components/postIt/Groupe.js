@@ -19,7 +19,7 @@ export default class GroupeManagement extends React.Component {
     const sortableId = this.props.name;
     let sortable = Sortable.create($(`.${sortableId}`)[0], {
       group: {
-        name: "groupe"
+        name: "postIt"
       },
       animation: 100
   });
@@ -31,15 +31,18 @@ export default class GroupeManagement extends React.Component {
     let postIts = [];
     let index = 0;
     for (let postIt in this.props.groupe) {
-      postIts.push(<PostIt postIt={this.props.groupe[postIt]} index={index} name={postIt}/>);
+      let path = `${this.props.path}/${postIt}`;
+      postIts.push(<PostIt postIt={this.props.groupe[postIt]} index={index} name={postIt} delFlg={this.props.delFlg} path={path}/>);
       index++;
     }
 
     return (
-      <div className={className}>
-        <span>{name}</span>
-        <div className={`postItBoss ${this.props.name}`}>{postIts}</div>
-      </div>
+      <section className={className}>
+        <h3>
+          <span className="groupTitle">{name}</span>
+        </h3>
+        <article className={`postItBoss ${this.props.name}`}>{postIts}</article>
+      </section>
     );
   }
 

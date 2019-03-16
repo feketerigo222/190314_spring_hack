@@ -12,7 +12,9 @@ export default class Room extends React.Component {
     this.state = {
         teamList: undefined,
         currentTopicName: "topic1",
-        currentTopic: undefined
+        currentTopic: undefined,
+        delFlg: false,
+        path: 'team1'
     }
   }
   
@@ -43,18 +45,24 @@ export default class Room extends React.Component {
 
     render() {
         if (!this.state.teamList) return null;
-        
+        console.log(this.state.delFlg)
         return (
             <div className="room_main">
                 <div className="room_left_container">
                     <TopicList team={this.state.teamList}/>
                 </div>
                 <div className="room_right_container">
-                    <RoomHeader/>
-                    <GroupeManagement currentTopic={this.state.currentTopic}/>
+                    <RoomHeader changeFlg={this.changeFlg}/>
+                    <GroupeManagement currentTopic={this.state.currentTopic} delFlg={this.state.delFlg} path={this.state.path} currentTopicName={this.state.currentTopicName}/>
                 </div>
             </div>
         );
+    }
+
+    changeFlg = () => {
+        this.setState({
+            delFlg: this.state.delFlg ? false : true,
+        })
     }
 }
 

@@ -1,7 +1,7 @@
 @import 'common.scss';
 
 .roomHeader {
-    width: calc(100vw - 295px);
+    width: calc(100vw - 300px);
     height: 45px;
     border-bottom: 1px solid $borderColor;
     color: $subColorGray;
@@ -11,16 +11,88 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: visible;
 
     .roomTitleContainer {
         width: 300px;
         border-right: 1px solid $borderColor;
         padding: 0 15px;
+        display: flex;
+
+        .topicHeaderIcon {
+            width: 16px;
+            height: 16px;
+            margin-bottom: -2px;
+            display: block;
+        }
+        .topicNameArea {
+            padding: 0 5px;
+            width: 250px;
+        }
     }
 
     .roomHeaderMenu {
         padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        .topicHeaderIcon {
+            width: 20px;
+            height: 20px;
+            margin-bottom: -2px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .groupIcon, .deleteIcon {
+            position: relative;
+        }
+        .groupIcon {
+            .iconCaption {
+                width: 100px;
+                left: -40px;
+                &::before {
+                    margin-left: 40px;
+                }
+            }
+        }
+        .deleteIcon {
+            .iconCaption {
+                width: 50px;
+                left: -15px;
+                &::before {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .iconCaption {
+            display: none;
+            position: absolute;
+            bottom: -40px;
+            z-index: 5;
+            background-color: $mainColorGreen;
+            border-radius: 3px;
+            color: $subColorWhite;
+            padding: 4px 8px;
+            font-size: 14px;
+            text-align: center;
+            &::before {
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 0;
+                top: -19px;
+                border: solid transparent;
+                border-color: rgba(51, 204, 153, 0);
+                border-bottom-color: $mainColorGreen;
+                border-width: 10px;
+                pointer-events: none;
+                content: " ";
+            }
+        }
+        .topicHeaderIcon:hover + .iconCaption {
+            display: block;
+        }
         .shareButton {
             color: $subColorWhite;
             background-color: $mainColorGreen;
@@ -28,7 +100,72 @@
             border-radius: 50px;
             font-size: 0.9rem;
             display: block;
-            padding: 5px 20px;
+            padding: 4px 20px;
+            margin: 0 5px;
+            &:hover + .buttonCaption {
+                display: block;
+            }
+        }
+        .buttonCaption {
+            display: none;
+            width: 270px;
+            font-size: 14px;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            background-color: $subColorWhite;
+            border: 1px solid $borderColor;
+            border-radius: 3px;
+            padding: 10px 15px;
+            z-index: 100;
+
+            &::before {
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: -20px;
+                right: 28px;
+                border: solid transparent;
+                border-color: rgba(51, 204, 153, 0);
+                border-bottom-color: $borderColor;
+                border-width: 10px;
+                pointer-events: none;
+                content: " ";
+            }
+            &::after {
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: -19px;
+                right: 28px;
+                border: solid transparent;
+                border-color: rgba(51, 204, 153, 0);
+                border-bottom-color: $subColorWhite;
+                border-width: 10px;
+                pointer-events: none;
+                content: " ";
+            }
+
+            h4 {
+                font-size: 14px;
+                color: $subColorBlack;
+                display: block;
+                padding: 4px 0 8px;
+            }
+            span {
+                font-size: 13px;
+            }
+            input {
+                width: 100%;
+                font-size: 14px;
+                font-weight: 300;
+                color: $subColorGray; 
+                border-radius: 50px;               
+                border: 1px solid $borderColor;
+                padding: 4px 10px;
+                display: block;
+                margin-bottom: 10px;
+            }
         }
     }
 }

@@ -9,6 +9,9 @@
     margin: 0;
     z-index: 5;
     position: absolute;
+    &:hover{
+        box-shadow: 0 0 10px rgba(255, 214, 34, 1);
+    }
 }
 
 .overDiv {
