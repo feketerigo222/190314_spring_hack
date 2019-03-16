@@ -3,7 +3,6 @@ import { firebaseDB } from '../../firebase';
 import penki from '../../images/penki.png';
 import del from '../../images/icon_119860_256.png';
 import $ from 'jquery';
-import Sortable from 'sortablejs';
 
 
 export default class PostIt extends React.Component {
@@ -15,16 +14,16 @@ export default class PostIt extends React.Component {
             teamRef
         }
     }
-    sdb;
+    sdb = [];
     curImg;
     componentDidMount = () => {
         const SimpleDrawingBoard = require('simple-drawing-board');
-        this.sdb = new SimpleDrawingBoard(document.getElementById('canvas'), {
+        this.sdb[0] = new SimpleDrawingBoard(document.getElementById('canvas'), {
             lineColor: '#000',
             lineSize: 1,
         });
-        this.sdb.fill("#FFA5D2");
-        this.sdb.ev.on('save', curImg => {
+        this.sdb[0].fill("#FFA5D2");
+        this.sdb[0].ev.on('save', curImg => {
             this.curImg = curImg;
         });
         $('#main').on('touchstart', onTouchStart); //指が触れたか検知
@@ -53,18 +52,16 @@ export default class PostIt extends React.Component {
                 let copied = $("#canvas").clone(true);
                 $("#canvas").css("animation", "poitto 0.5s");        
                 $("#canvas").on('animationend', function() {
-                    //console.log(sdb)
-                    let img = sdb.getImg();
+                    let img = sdb[0].getImg();
                     let teamRef = firebaseDB.ref('team1/topic1/GroupeA');
                     teamRef.push(img);
                     $("#canvas").before(copied);
                     $(this).remove();
-                    //$("#canvas").attr("animation", "");
-                        this.sdb = new SimpleDrawingBoard(document.getElementById('canvas'), {
+                        sdb[0] = new SimpleDrawingBoard(document.getElementById('canvas'), {
                             lineColor: '#000',
                             lineSize: 1,
                         });
-                this.sdb.fill("#FFA5D2");
+                sdb[0].fill("#FFA5D2");
                 });
             }
         }
@@ -101,15 +98,15 @@ export default class PostIt extends React.Component {
     }
 
     clearCanvas = () => {
-        this.sdb.clear();
+        this.sdb[0].clear();
     }
 
     setImg = () => {
-        this.curImg = this.sdb.getImg();
+        this.curImg = this.sdb[0].getImg();
         this.state.teamRef.push(this.curImg)
     }
 
     colorChange = color => {
-        this.sdb.fill(color);
+        this.sdb[0].fill(color);
     }
 }
