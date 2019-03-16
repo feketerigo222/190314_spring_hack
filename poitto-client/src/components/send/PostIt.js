@@ -25,7 +25,19 @@ export default class PostIt extends React.Component {
         this.sdb.ev.on('save', curImg => {
             this.curImg = curImg;
         });
-    }
+        $(".sendbutton").on("click", function () {
+            let copied = $("#canvas").clone(true);
+            $("#canvas").css("animation", "poitto 0.5s");        
+            $("#canvas").on('animationend', function(){
+                $(this).before(copied);
+                $(this).remove();
+                    this.sdb = new SimpleDrawingBoard(document.getElementById('canvas'), {
+                        lineColor:    '#000',
+                        lineSize:     1,
+            });
+            this.sdb.fill("#FFA5D2");
+            });
+    })};
     
     render() {
         const colors = ["#FFA5D2", "#FFD9A5", "#FFF5A5", "#C1FFA5", "#A5FFF5", "#A5D5FF", "#CFA5FF"];
@@ -34,8 +46,7 @@ export default class PostIt extends React.Component {
                 <button onClick={this.colorChange.bind(this, color)}></button>
             );
         });
-
-
+        
         return (
           <div className="pictIt">
               <canvas id="canvas"></canvas>
@@ -46,6 +57,7 @@ export default class PostIt extends React.Component {
               <button onClick={this.clearCanvas} className="delete">
               <img src={del} alt=""></img>
               </button>
+              <button onClick={this.setImg} className="sendbutton"></button>
           </div>
         );
     }

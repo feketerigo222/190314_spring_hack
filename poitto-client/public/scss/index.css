@@ -503,11 +503,15 @@ button {
   overflow: hidden; }
   .currentGroupeList .postIts {
     display: inline-block;
+    position: relative;
     overflow: hidden;
     margin: 20px 5px 0px 5px;
     width: 50px;
     height: 50px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13); }
+    .currentGroupeList .postIts .postIt {
+      width: 50px;
+      height: 50px; }
 
 .memo {
   margin: 0 10px;
@@ -522,20 +526,22 @@ button {
   margin-left: 10px; }
 
 .pictIt {
-  width: 100vw; }
+  width: 100vw;
+  z-index: 100; }
 
 .pictIt canvas {
   width: 90vw;
   height: 90vw;
   margin: 5vw;
   margin-top: 15vh;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13); }
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13);
+  z-index: 1000; }
 
 .changeColor {
   display: inline-block;
-  position: relative;
-  top: -20px;
-  left: 20px; }
+  position: absolute;
+  bottom: 16vh;
+  left: 7vw; }
   .changeColor button:nth-child(2) {
     background-color: transparent;
     border: none;
@@ -672,6 +678,18 @@ button {
   width: 20vw;
   height: 8vh;
   color: #707070; }
+
+.sendbutton {
+  position: relative;
+  bottom: 1px;
+  left: 50vw;
+  width: 20vw;
+  height: 30vh; }
+
+@keyframes poitto {
+  0% { }
+  100% {
+    transform: translateY(-45vh) scale(0.1); } }
 
 .currentGroupeList {
   flex-direction: row;
@@ -691,11 +709,15 @@ button {
   overflow: hidden; }
   .currentGroupeList .postIts {
     display: inline-block;
+    position: relative;
     overflow: hidden;
     margin: 20px 5px 0px 5px;
     width: 50px;
     height: 50px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13); }
+    .currentGroupeList .postIts .postIt {
+      width: 50px;
+      height: 50px; }
 
 .memo {
   margin: 0 10px;
@@ -710,20 +732,22 @@ button {
   margin-left: 10px; }
 
 .pictIt {
-  width: 100vw; }
+  width: 100vw;
+  z-index: 100; }
 
 .pictIt canvas {
   width: 90vw;
   height: 90vw;
   margin: 5vw;
   margin-top: 15vh;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13); }
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13);
+  z-index: 1000; }
 
 .changeColor {
   display: inline-block;
-  position: relative;
-  top: -20px;
-  left: 20px; }
+  position: absolute;
+  bottom: 16vh;
+  left: 7vw; }
   .changeColor button:nth-child(2) {
     background-color: transparent;
     border: none;
@@ -860,6 +884,18 @@ button {
   width: 20vw;
   height: 8vh;
   color: #707070; }
+
+.sendbutton {
+  position: relative;
+  bottom: 1px;
+  left: 50vw;
+  width: 20vw;
+  height: 30vh; }
+
+@keyframes poitto {
+  0% { }
+  100% {
+    transform: translateY(-45vh) scale(0.1); } }
 
 .postIts {
   display: flex;
